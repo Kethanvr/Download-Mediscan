@@ -75,7 +75,7 @@ export default function FeaturesSection() {
   return (
     <section className="bg-gray-50 py-20 font-poppins">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8 text-yellow-500 tracking-wide">
+        <h2 className="text-3xl font-semibold text-center mb-8 text-primary tracking-wide">
           🩺 About MediScan
         </h2>
 
