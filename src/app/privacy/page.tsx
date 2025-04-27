@@ -3,23 +3,22 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function PrivacyPolicy() {
-  return (
-    <main className="min-h-screen py-10 bg-gray-50">
+  return (    <main className="min-h-screen py-10 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto">
         {/* Back to Home Link */}
-        <Link href="/" className="inline-flex items-center text-gray-600 mb-6 hover:text-primary transition-colors">
+        <Link href="/" className="inline-flex items-center text-gray-600 mb-6 hover:text-blue-600 transition-colors">
           <FaArrowLeft className="mr-2" />
           Back to Home
         </Link>
 
         {/* Header */}
-        <div className="flex items-center mb-8">
+        <div className="flex items-center mb-12">
           <AppLogo className="w-40 h-40" />
-          <h1 className="text-2xl md:text-3xl font-bold ml-3 text-primary">MediScan Privacy Policy</h1>
+          <h1 className="text-3xl md:text-4xl font-bold ml-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Privacy Policy</h1>
         </div>
 
         {/* Content Section */}
-        <div className="bg-white rounded-lg p-6 md:p-8 shadow-sm">
+        <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg border border-blue-100 hover:border-blue-200 transition-colors">
           <div className="max-w-4xl">
             <p className="text-sm text-gray-500 mb-6">Last updated: May 2025</p>
 

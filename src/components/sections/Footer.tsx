@@ -13,7 +13,7 @@ const quickLinks: FooterLink[] = [
   { href: "/", label: "Home" },
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
-  { href: "#contact", label: "Contact Us" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 const socialLinks = [
