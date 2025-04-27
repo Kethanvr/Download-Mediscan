@@ -15,7 +15,7 @@ export default function RuralHealthcareSection() {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 font-poppins">
       <div className="container mx-auto">
         <div className="bg-blue-50 rounded-2xl p-8 md:p-12">
           <div className="max-w-3xl mx-auto text-center">

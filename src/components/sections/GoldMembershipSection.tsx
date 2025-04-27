@@ -24,7 +24,7 @@ const screenshots = [
 
 export default function GoldMembershipSection() {
   return (
-    <section className="py-20 container mx-auto">
+    <section className="py-20 container mx-auto font-poppins">
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-yellow-500">
         ✨ Introducing MediScan Gold
       </h2>

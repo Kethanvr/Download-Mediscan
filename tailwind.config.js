@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         primary: '#3B82F6',
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+      },      fontFamily: {
+        sans: ['var(--font-baloo-bhai)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
       },
       animation: {
         'loading': 'loading 1.5s ease-in-out infinite',

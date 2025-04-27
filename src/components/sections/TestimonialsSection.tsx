@@ -23,7 +23,7 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-20 font-poppins">
       <div className="container mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-12">
           ⭐ What Our Users Say

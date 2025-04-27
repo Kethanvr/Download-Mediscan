@@ -18,7 +18,7 @@ const appDetails: AppDetail[] = [
 
 export default function DownloadSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-20 bg-gradient-to-b from-white to-blue-50 font-poppins">
       <div className="container mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-8">
           📱 Download MediScan Today

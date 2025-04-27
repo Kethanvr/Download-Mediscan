@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeaderSection() {
   return (
-    <header className="bg-gradient-to-b from-blue-50 to-white py-16">
+    <header className="bg-gradient-to-b from-blue-50 to-white py-16 font-poppins">
       <div className="container mx-auto pt-4 pb-6 text-center">
         {/* App Logo */}
         <div className="flex justify-center mb-8">

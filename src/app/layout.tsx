@@ -1,11 +1,18 @@
 import Head from "next/head";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Baloo_Bhai_2, Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const balooBhai2 = Baloo_Bhai_2({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-baloo-bhai",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
   display: "swap",
 });
 export const metadata: Metadata = {
@@ -66,7 +73,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
       </Head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${balooBhai2.variable} ${poppins.variable} font-sans antialiased`}>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-primary"

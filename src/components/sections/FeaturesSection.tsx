@@ -71,7 +71,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-20 font-poppins">
       <div className="container mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
           🩺 About MediScan
