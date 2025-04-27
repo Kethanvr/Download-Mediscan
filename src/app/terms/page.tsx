@@ -18,7 +18,7 @@ export default function TermsOfService() {
         
         <div className="bg-white rounded-lg p-6 md:p-8 shadow-sm">
           <div className="max-w-4xl">
-            <p className="text-sm text-gray-500 mb-6">Last updated: May 2023</p>
+            <p className="text-sm text-gray-500 mb-6">Last updated: May 2025</p>
             
             <div className="prose max-w-none">
               <p className="mb-4">
@@ -72,7 +72,7 @@ export default function TermsOfService() {
               <h3 className="text-xl font-semibold mt-8 mb-4">Intellectual Property</h3>
               
               <p className="mb-4">
-                The Application and its original content, features, and functionality are and will remain the exclusive property of MediScan Inc. and its licensors. The Application is protected by copyright, trademark, and other laws of both the India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of MediScan Inc.
+                The Application and its original content, features, and functionality are and will remain the exclusive property of MediScan Inc. and its licensors. The Application is protected by copyright, trademark, and other laws of both India and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of MediScan Inc.
               </p>
               
               <h3 className="text-xl font-semibold mt-8 mb-4">Termination</h3>
