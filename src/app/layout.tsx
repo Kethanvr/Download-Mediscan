@@ -8,15 +8,14 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
-
 export const metadata: Metadata = {
   title: "MediScan - AI Medicine Scanner at Your Fingertips",
   description: "MediScan is your trusted AI-powered health companion designed to simplify medicine identification and understanding, especially for rural healthcare workers.",
-  keywords: ["medicine scanner", "AI healthcare", "medicine identification", "rural healthcare", "medical app"],
+  keywords: ["medicine scanner", "AI healthcare", "medicine identification", "rural healthcare", "medical app", "health AI", "medicine app"],
   authors: [{ name: "Kethan VR" }],
   creator: "Kethan VR",
   publisher: "MediScan Technologies",
-  metadataBase: new URL("https://mediscan-app.vercel.app"),
+  metadataBase: new URL("https://mediscan.kethanvr.me"),
   openGraph: {
     title: "MediScan - AI Medicine Scanner at Your Fingertips",
     description: "Identify medicines instantly with AI-powered scanning technology",
@@ -53,6 +52,7 @@ export const metadata: Metadata = {
   category: "healthcare",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,15 +61,19 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <Head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-</Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+      </Head>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-primary">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-primary"
+        >
           Skip to main content
         </a>
-        <div id="main-content">
-          {children}
-        </div>
+        <div id="main-content">{children}</div>
       </body>
     </html>
   );
