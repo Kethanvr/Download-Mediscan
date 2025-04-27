@@ -1,0 +1,28 @@
+import type { SVGProps } from "react";
+
+export default function AppLogo(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      width="100"
+      height="100"
+      fill="none"
+      {...props}
+    >
+      <title>App Logo</title>
+      <circle cx="50" cy="50" r="45" fill="#3B82F6" />
+      <path
+        d="M30 40L50 30L70 40V60L50 70L30 60V40Z"
+        fill="white"
+      />
+      <path
+        d="M50 50V70M50 50L30 40M50 50L70 40M50 50L50 30"
+        stroke="#3B82F6"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+      <circle cx="50" cy="50" r="5" fill="#3B82F6" />
+    </svg>
+  );
+}
