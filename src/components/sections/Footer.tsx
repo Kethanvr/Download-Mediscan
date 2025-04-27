@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import AppLogo from "@/components/AppLogo";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 interface FooterLink {
   href: string;
@@ -17,8 +17,11 @@ const quickLinks: FooterLink[] = [
 ];
 
 const socialLinks = [
-  { href: "https://github.com", icon: FaGithub, label: "GitHub" },
-  { href: "https://linkedin.com", icon: FaLinkedin, label: "LinkedIn" },
+  { href: "https://github.com/Kethanvr", icon: FaGithub, label: "GitHub" },
+  { href: "https://www.linkedin.com/in/kethan-vr-433ab532b/", icon: FaLinkedin, label: "LinkedIn" },
+  { href: "https://x.com/VrKethan", icon: FaTwitter, label: "Twitter" },
+  { href: "https://www.youtube.com/@kethanvr", icon: FaYoutube, label: "YouTube" },
+
 ];
 
 export default function Footer() {
@@ -36,17 +39,17 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-gray-600 mb-4">
-                Empowering healthcare decisions with AI-powered medicine
-                identification and information.
+                Empowering healthcare decisions with AI-powered medicine identification and comprehensive information.
               </p>
               <p className="text-sm text-gray-500">
-                © 2023 MediScan by Kethan VR. All rights reserved.
+                © 2025 MediScan by Kethan VR. All rights reserved.
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h3 className="font-bold text-gray-800 mb-4">Quick Links</h3>              <ul className="space-y-2">
+              <h3 className="font-bold text-gray-800 mb-4">Quick Links</h3>
+              <ul className="space-y-2">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
                     <Link
@@ -56,18 +59,18 @@ export default function Footer() {
                       {link.label}
                     </Link>
                   </li>
-                ))}              </ul>
+                ))}
+              </ul>
             </div>
 
             {/* Connect */}
             <div>
-              <h3 className="font-bold text-gray-800 mb-4">
-                Connect With Us
-              </h3>
+              <h3 className="font-bold text-gray-800 mb-4">Connect With Us</h3>
               <p className="text-sm text-gray-600 mb-4">
-                Have questions or feedback? We'd love to hear from you.
+                We value your questions and feedback! Feel free to connect with us through any of the platforms below.
               </p>
-              <div className="flex space-x-4">                {socialLinks.map((social) => {
+              <div className="flex space-x-4">
+                {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
                     <Link
@@ -79,14 +82,14 @@ export default function Footer() {
                       <Icon className="w-5 h-5" />
                     </Link>
                   );
-                })}              </div>
+                })}
+              </div>
             </div>
           </div>
 
           <div className="border-t border-gray-200 mt-8 pt-8 text-center">
             <p className="text-sm text-gray-500">
-              MediScan is designed to assist with medicine identification but
-              is not a substitute for professional medical advice.
+              MediScan is designed to assist with medicine identification but is not a substitute for professional medical advice.
             </p>
           </div>
         </div>
