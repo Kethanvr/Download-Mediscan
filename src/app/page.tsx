@@ -43,13 +43,15 @@ export default function Home() {
           </p>
 
           {/* Download Button */}
-          <button
-            type="button"
-            className="flex items-center mx-auto bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg mb-16 hover:bg-blue-600 transition-colors shadow-lg"
-          >
-            <FaDownload className="mr-2" />
-            Download APK
-          </button>
+          <a href="/app-release.apk" download>
+            <button
+              type="button"
+              className="flex items-center mx-auto bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg mb-16 hover:bg-blue-600 transition-colors shadow-lg"
+            >
+              <FaDownload className="mr-2" />
+              Download APK
+            </button>
+          </a>
 
           {/* Phone Demo */}
           <div className="flex justify-center">
@@ -421,13 +423,15 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button
-                  type="button"
-                  className="w-full flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors"
-                >
-                  <FaDownload className="mr-2" />
-                  Download APK
-                </button>
+                <a href="/app-release.apk" download>
+                  <button
+                    type="button"
+                    className="w-full flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors"
+                  >
+                    <FaDownload className="mr-2" />
+                    Download APK
+                  </button>
+                </a>
               </div>
 
               <div className="mt-6 bg-blue-50 p-4 rounded-lg text-center">
