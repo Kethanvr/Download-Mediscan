@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import PhoneMockup from "@/components/PhoneMockup";
@@ -16,6 +17,8 @@ import { RiAdvertisementLine } from "react-icons/ri";
 
 export default function Home() {
   return (
+  
+  
     <main className="min-h-screen">
       {/* Header Section */}
       <header className="bg-gradient-to-b from-blue-50 to-white py-16">
@@ -539,5 +542,6 @@ export default function Home() {
         </div>
       </footer>
     </main>
+    
   );
 }
