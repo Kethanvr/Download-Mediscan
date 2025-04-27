@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MediScan - AI Medicine Identification App
 
-## Getting Started
+MediScan is a responsive, mobile-focused landing page for an AI-powered medicine identification application designed to empower rural healthcare providers and individuals. This project uses Next.js and Tailwind CSS to create a modern, clean interface that highlights the app's key features.
 
-First, run the development server:
+![MediScan Screenshot](public/screenshot.svg)
+
+## 🚀 Features
+
+- **Responsive Design**: Looks great on all devices from mobile to desktop
+- **Modern UI**: Clean, blue and white color scheme with medical-themed elements
+- **Interactive Elements**: Buttons, testimonials, and feature highlights
+- **App Screenshots**: Visual representation of the app's functionality
+- **Accessibility**: ARIA labels and semantic HTML for better accessibility
+- **Error Handling**: Custom error and 404 pages
+
+## 🎯 Target Audience
+
+- Rural healthcare workers
+- Individuals in areas with limited healthcare access
+- Elderly patients and their caregivers
+- Healthcare professionals seeking quick medicine identification
+
+## 🧰 Technical Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Typography**: Inter font family
+- **Deployment**: Ready for deployment on Vercel or other platforms
+
+## 🚀 Getting Started
+
+1. Clone this repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/app` - Main application pages
+- `/app/privacy` - Privacy policy page
+- `/app/terms` - Terms of service page
+- `/components` - Reusable UI components
+- `/public` - Static assets including SVGs and images
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+The landing page can be easily customized by editing:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Colors**: Update primary colors in `globals.css` and `tailwind.config.js`
+- **Content**: Modify text in the page components
+- **Images**: Replace mock app screenshots in the `PlaceholderAppScreen` component
+- **Logo**: Modify the `AppLogo` component
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Future Enhancements
 
-## Deploy on Vercel
+- Add actual app download functionality
+- Implement language switching for multilingual support
+- Add a blog section for health and medication information
+- Integrate with a medicine database API for demo purposes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 About the Developer
+
+Designed and developed by Kethan VR, focusing on creating accessible healthcare technology solutions for underserved communities.
+
+---
+
+This landing page is a demonstration of a fictional product. In a real healthcare application, proper medical supervision, testing, and regulatory compliance would be required.

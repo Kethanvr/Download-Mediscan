@@ -4,107 +4,104 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen py-10">
+    <main className="min-h-screen py-10 bg-gray-50">
       <div className="container mx-auto">
-        <Link href="/" className="flex items-center text-gray-600 mb-6 hover:text-primary transition-colors">
+        <Link href="/" className="inline-flex items-center text-gray-600 mb-6 hover:text-primary transition-colors">
           <FaArrowLeft className="mr-2" />
           Back to Home
         </Link>
         
-        <div className="flex items-center mb-6">
-          <AppLogo width={40} height={40} />
-          <h1 className="text-2xl font-bold ml-3">MediScan</h1>
+        <div className="flex items-center mb-8">
+          <AppLogo width={48} height={48} />
+          <h1 className="text-2xl md:text-3xl font-bold ml-3 text-primary">MediScan Privacy Policy</h1>
         </div>
         
-        <div className="bg-white rounded-lg p-8 shadow-sm">
-          <h2 className="text-2xl font-bold mb-6">Privacy Policy</h2>
-          
-          <div className="prose max-w-none">
-            <p className="mb-4">Last updated: April 2025</p>
+        <div className="bg-white rounded-lg p-6 md:p-8 shadow-sm">
+          <div className="max-w-4xl">
+            <p className="text-sm text-gray-500 mb-6">Last updated: May 2023</p>
             
-            <p className="mb-4">
-              At MediScan, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
-            </p>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Information We Collect</h3>
-            
-            <p className="mb-4">
-              We may collect information about you in various ways when you use our application:
-            </p>
-            
-            <ul className="list-disc pl-6 mb-6">
-              <li className="mb-2">
-                <strong>Personal Data:</strong> We may collect personal information that you voluntarily provide when using our application, such as your name, email address, and medical information.
-              </li>
-              <li className="mb-2">
-                <strong>Device Information:</strong> We may collect information about your mobile device, including the hardware model, operating system and version, unique device identifiers, and mobile network information.
-              </li>
-              <li className="mb-2">
-                <strong>Usage Data:</strong> We collect information about how you use our application, such as the features you use, the time spent on the application, and your interactions with the application.
-              </li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">How We Use Your Information</h3>
-            
-            <p className="mb-4">
-              We may use the information we collect for various purposes, including to:
-            </p>
-            
-            <ul className="list-disc pl-6 mb-6">
-              <li className="mb-2">Provide, maintain, and improve our application</li>
-              <li className="mb-2">Personalize your experience with our application</li>
-              <li className="mb-2">Respond to your comments, questions, and customer service requests</li>
-              <li className="mb-2">Send you technical notices, updates, security alerts, and support messages</li>
-              <li className="mb-2">Monitor and analyze trends, usage, and activities in connection with our application</li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Sharing Your Information</h3>
-            
-            <p className="mb-4">
-              We may share information we collect as follows:
-            </p>
-            
-            <ul className="list-disc pl-6 mb-6">
-              <li className="mb-2">
-                <strong>Service Providers:</strong> We may share your information with third-party vendors, consultants, and other service providers who need access to such information to carry out work on our behalf.
-              </li>
-              <li className="mb-2">
-                <strong>Compliance with Laws:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.
-              </li>
-              <li className="mb-2">
-                <strong>Business Transfers:</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
-              </li>
-            </ul>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Data Security</h3>
-            
-            <p className="mb-6">
-              We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure.
-            </p>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Your Choices</h3>
-            
-            <p className="mb-6">
-              You can choose not to provide certain information, but this may limit your ability to use certain features of our application. You can also set your browser to block or alert you about cookies, but our application may not work properly without them.
-            </p>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Changes to This Privacy Policy</h3>
-            
-            <p className="mb-6">
-              We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy.
-            </p>
-            
-            <h3 className="text-xl font-semibold mt-8 mb-4">Contact Us</h3>
-            
-            <p className="mb-4">
-              If you have questions or comments about this Privacy Policy, please contact us at:
-            </p>
-            
-            <p>
-              <strong>Email:</strong> privacy@mediscan.example.com<br />
-              <strong>Address:</strong> 123 MediScan Avenue, Health City, HC 12345
-            </p>
+            <div className="prose max-w-none">
+              <p className="mb-4">
+                At MediScan, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
+              </p>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Information We Collect</h3>
+              
+              <p className="mb-4">
+                <strong>Personal Data</strong>: When you use our app, we may collect certain personally identifiable information, including but not limited to:
+              </p>
+              
+              <ul className="list-disc pl-5 mb-4">
+                <li>Camera data (only during active scanning)</li>
+                <li>Device information</li>
+                <li>Medicine scan history (stored locally on your device)</li>
+                <li>Optional health records you choose to upload</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">How We Use Your Information</h3>
+              
+              <p className="mb-4">
+                We use the collected data for various purposes:
+              </p>
+              
+              <ul className="list-disc pl-5 mb-4">
+                <li>To provide and maintain our Service</li>
+                <li>To identify medicines through our AI scanning technology</li>
+                <li>To provide medicine information and health guidance</li>
+                <li>To improve our AI models with anonymized data (only with explicit consent)</li>
+                <li>To respond to your inquiries and provide customer support</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Data Security</h3>
+              
+              <p className="mb-4">
+                The security of your data is important to us. Your health data and medicine scans are stored locally on your device. Any data sent to our servers for processing is encrypted during transmission and we do not retain image data after processing.
+              </p>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Offline Functionality</h3>
+              
+              <p className="mb-4">
+                MediScan is designed to function offline after initial setup. Core medicine identification features work without an internet connection, though some advanced features may require connectivity.
+              </p>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Rural Healthcare Focus</h3>
+              
+              <p className="mb-4">
+                As part of our commitment to rural healthcare empowerment, we've designed our privacy practices to be mindful of limited connectivity environments and to provide maximum utility while respecting user privacy.
+              </p>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Your Rights</h3>
+              
+              <p className="mb-4">
+                You have the right to:
+              </p>
+              
+              <ul className="list-disc pl-5 mb-4">
+                <li>Access the personal data we have about you</li>
+                <li>Request correction of your personal data</li>
+                <li>Delete your data from our systems</li>
+                <li>Restrict or object to our processing of your data</li>
+                <li>Data portability (receiving your data in a structured format)</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-8 mb-4">Contact Us</h3>
+              
+              <p className="mb-4">
+                If you have any questions about this Privacy Policy, please contact us at:
+              </p>
+              
+              <p className="mb-4">
+                <strong>Email</strong>: privacy@mediscan.app<br />
+                <strong>Address</strong>: MediScan Technologies, 123 Health Street, Bangalore, India
+              </p>
+            </div>
           </div>
+        </div>
+        
+        <div className="mt-8 text-center">
+          <Link href="/" className="text-primary hover:underline">
+            Return to Homepage
+          </Link>
         </div>
       </div>
     </main>

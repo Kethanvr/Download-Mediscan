@@ -1,0 +1,46 @@
+{
+  "name": "MediScan - AI Medicine Scanner",
+  "short_name": "MediScan",
+  "description": "AI-powered medicine identification and information app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Download App",
+      "url": "/#download",
+      "description": "Download the MediScan app"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/app-screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "MediScan Home Screen"
+    },
+    {
+      "src": "/app-screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Medicine Scanning"
+    }
+  ]
+}

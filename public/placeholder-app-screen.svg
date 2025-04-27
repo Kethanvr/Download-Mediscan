@@ -1,28 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="250" height="500" viewBox="0 0 250 500" fill="none">
-  <rect width="250" height="500" rx="20" fill="#EBF5FF" />
+  <rect width="250" height="500" rx="20" fill="#F3F4F6" />
+  
+  <!-- App header -->
   <rect y="0" width="250" height="60" rx="8" fill="#3B82F6" />
   <circle cx="30" cy="30" r="8" fill="white" />
   <rect x="50" y="26" width="100" height="8" rx="4" fill="white" />
   
-  <rect x="25" y="80" width="200" height="100" rx="8" fill="white" />
-  <rect x="45" y="100" width="160" height="8" rx="4" fill="#93C5FD" />
-  <rect x="45" y="120" width="120" height="8" rx="4" fill="#93C5FD" />
-  <rect x="45" y="140" width="140" height="8" rx="4" fill="#93C5FD" />
+  <!-- Camera viewfinder -->
+  <rect x="25" y="80" width="200" height="200" rx="8" fill="white" stroke="#3B82F6" strokeWidth="2" />
+  <circle cx="125" cy="180" r="60" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 2" />
+  <path d="M105 180H145M125 160V200" stroke="#3B82F6" strokeWidth="2" />
   
-  <rect x="25" y="200" width="200" height="100" rx="8" fill="white" />
-  <circle cx="75" cy="250" r="30" fill="#93C5FD" />
-  <rect x="125" y="230" width="80" height="8" rx="4" fill="#93C5FD" />
-  <rect x="125" y="250" width="60" height="8" rx="4" fill="#93C5FD" />
-  <rect x="125" y="270" width="70" height="8" rx="4" fill="#93C5FD" />
+  <!-- Scan button -->
+  <rect x="75" y="300" width="100" height="40" rx="20" fill="#3B82F6" />
+  <text x="125" y="325" textAnchor="middle" fill="white" fontFamily="Arial" fontSize="14" fontWeight="bold">SCAN</text>
   
-  <rect x="25" y="320" width="95" height="80" rx="8" fill="white" />
-  <rect x="45" y="340" width="55" height="8" rx="4" fill="#93C5FD" />
-  <rect x="45" y="360" width="40" height="8" rx="4" fill="#93C5FD" />
+  <!-- Medicine info card -->
+  <rect x="25" y="360" width="200" height="120" rx="8" fill="white" stroke="#E5E7EB" strokeWidth="1" />
+  <rect x="45" y="380" width="120" height="8" rx="4" fill="#3B82F6" opacity="0.8" />
+  <rect x="45" y="400" width="160" height="6" rx="3" fill="#93C5FD" />
+  <rect x="45" y="415" width="140" height="6" rx="3" fill="#93C5FD" />
+  <rect x="45" y="430" width="100" height="6" rx="3" fill="#93C5FD" />
+  <rect x="45" y="445" width="130" height="6" rx="3" fill="#93C5FD" />
   
-  <rect x="130" y="320" width="95" height="80" rx="8" fill="white" />
-  <rect x="150" y="340" width="55" height="8" rx="4" fill="#93C5FD" />
-  <rect x="150" y="360" width="40" height="8" rx="4" fill="#93C5FD" />
-  
-  <rect x="85" y="430" width="80" height="40" rx="20" fill="#3B82F6" />
-  <rect x="105" y="446" width="40" height="8" rx="4" fill="white" />
+  <!-- Medical cross icon -->
+  <circle cx="210" cy="380" r="15" fill="#EFF6FF" />
+  <path d="M210 370V390M200 380H220" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" />
 </svg>

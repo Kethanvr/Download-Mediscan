@@ -25,3 +25,8 @@ body {
 .text-primary {
   color: var(--primary);
 }
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}

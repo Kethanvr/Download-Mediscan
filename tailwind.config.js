@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      animation: {
+        'loading': 'loading 1.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

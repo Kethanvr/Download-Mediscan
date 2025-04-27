@@ -8,21 +8,34 @@ export default function AppLogo(props: SVGProps<SVGSVGElement>) {
       width="100"
       height="100"
       fill="none"
+      aria-label="MediScan Logo"
       {...props}
     >
-      <title>App Logo</title>
+      <title>MediScan Logo</title>
       <circle cx="50" cy="50" r="45" fill="#3B82F6" />
       <path
-        d="M30 40L50 30L70 40V60L50 70L30 60V40Z"
+        d="M28 35L50 25L72 35V65L50 75L28 65V35Z"
         fill="white"
       />
+      <circle cx="50" cy="50" r="15" fill="#3B82F6" stroke="white" strokeWidth="2" />
       <path
-        d="M50 50V70M50 50L30 40M50 50L70 40M50 50L50 30"
-        stroke="#3B82F6"
+        d="M50 40V60M40 50H60"
+        stroke="white"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+      <path
+        d="M76 44C78.5 48 78.5 52 76 56"
+        stroke="white"
         strokeWidth="2"
         strokeLinecap="round"
       />
-      <circle cx="50" cy="50" r="5" fill="#3B82F6" />
+      <path
+        d="M24 44C21.5 48 21.5 52 24 56"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
