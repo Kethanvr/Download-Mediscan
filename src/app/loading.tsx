@@ -5,7 +5,7 @@ export default function Loading() {
     <div className="min-h-screen flex flex-col items-center justify-center">
       <div className="flex flex-col items-center">
         <div className="animate-pulse">
-          <AppLogo width={96} height={96} />
+          <AppLogo className="w-24 h-24" />
         </div>
         
         <h2 className="mt-6 text-xl font-medium text-gray-600">Loading MediScan...</h2>

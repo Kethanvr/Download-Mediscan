@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container mx-auto pt-4 pb-6 text-center">
           {/* App Logo */}
           <div className="flex justify-center mb-8">
-            <AppLogo width={120} height={120} />
+         <AppLogo className="w-40 h-40" />
           </div>
           
           {/* Badge */}
@@ -348,7 +348,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1 bg-white p-4 flex items-center justify-center flex-col">
                     <div className="w-24 h-24 mb-6">
-                      <AppLogo width={96} height={96} />
+                       <AppLogo className="w-40 h-40" />
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-blue-600 mb-1">MediScan</div>
@@ -423,7 +423,7 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <div className="flex items-center mb-4">
-                  <AppLogo width={40} height={40} />
+            <AppLogo className="w-40 h-40" />
                   <div className="text-xl font-bold text-primary ml-2">MediScan</div>
                 </div>
                 <p className="text-gray-600 mb-4">

@@ -12,7 +12,7 @@ export default function TermsOfService() {
         </Link>
         
         <div className="flex items-center mb-8">
-          <AppLogo width={48} height={48} />
+         <AppLogo className="w-40 h-40" />
           <h1 className="text-2xl md:text-3xl font-bold ml-3 text-primary">MediScan Terms of Service</h1>
         </div>
         

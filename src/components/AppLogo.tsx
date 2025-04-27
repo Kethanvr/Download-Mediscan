@@ -1,41 +1,14 @@
-import type { SVGProps } from "react";
+import Image from 'next/image';
 
-export default function AppLogo(props: SVGProps<SVGSVGElement>) {
+export default function AppLogo(props: { className?: string }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 100"
-      width="100"
-      height="100"
-      fill="none"
-      aria-label="MediScan Logo"
-      {...props}
-    >
-      <title>MediScan Logo</title>
-      <circle cx="50" cy="50" r="45" fill="#3B82F6" />
-      <path
-        d="M28 35L50 25L72 35V65L50 75L28 65V35Z"
-        fill="white"
-      />
-      <circle cx="50" cy="50" r="15" fill="#3B82F6" stroke="white" strokeWidth="2" />
-      <path
-        d="M50 40V60M40 50H60"
-        stroke="white"
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-      <path
-        d="M76 44C78.5 48 78.5 52 76 56"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M24 44C21.5 48 21.5 52 24 56"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-    </svg>
+    <Image
+      src="/assets/Mediscan.png"
+      alt="MediScan Logo"
+      width={100}
+      height={100}
+      className={props.className}
+      priority
+    />
   );
 }
