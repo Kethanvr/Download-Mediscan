@@ -1,81 +1,68 @@
 # MediScan - AI Medicine Identification App
 
-MediScan is a responsive, mobile-focused landing page for an AI-powered medicine identification application designed to empower rural healthcare providers and individuals. This project uses Next.js and Tailwind CSS to create a modern, clean interface that highlights the app's key features.
+<p align="center">
+  <img src="public/assets/Mediscan.png" alt="MediScan Logo" width="150"/>
+</p>
 
-![MediScan Screenshot](public/screenshot.svg)
+<p align="center">
+  <strong>Empowering healthcare access through AI-driven medicine identification.</strong>
+</p>
 
-## 🚀 Features
+MediScan is an AI-powered application designed to help users quickly and accurately identify medications. This landing page showcases the app's capabilities, built with Next.js and Tailwind CSS for a modern, responsive experience.
 
-- **Responsive Design**: Looks great on all devices from mobile to desktop
-- **Modern UI**: Clean, blue and white color scheme with medical-themed elements
-- **Interactive Elements**: Buttons, testimonials, and feature highlights
-- **App Screenshots**: Visual representation of the app's functionality
-- **Accessibility**: ARIA labels and semantic HTML for better accessibility
-- **Error Handling**: Custom error and 404 pages
+<p align="center">
+  <img src="public/assets/Home-gold.png" alt="MediScan Logo" width="150"/>
+</p>
+
+## 📲 Download the App
+
+Get started with MediScan today! Download the Android application directly:
+
+[**Download MediScan APK**](public/MediScan.apk?raw=true)
+
+*(Note: Ensure your device allows installation from unknown sources. This is a demo application.)*
+
+## ✨ App Features
+
+MediScan offers a range of features designed for ease of use and accuracy:
+
+*   **🤖 AI-Powered Identification**: Simply snap a photo of a medicine, and our advanced AI will identify it, providing crucial information instantly.
+*   **🩺 Focus on Rural Healthcare**: Specifically designed to support healthcare workers and individuals in areas with limited access to medical resources.
+*   **🥇 Gold Membership**: Unlock premium features, potentially including detailed medication history, interaction checkers, and priority support (as showcased in the landing page).
+*   **📜 History Tracking**: Keep a log of identified medications for easy reference (Gold feature).
+*   **💬 Chat Support**: Access help and information directly within the app (Gold feature).
+*   **📱 User-Friendly Interface**: Clean, intuitive design makes navigating the app simple for all users.
+*   **♿ Accessibility**: Built with accessibility in mind to ensure usability for everyone.
 
 ## 🎯 Target Audience
 
-- Rural healthcare workers
-- Individuals in areas with limited healthcare access
-- Elderly patients and their caregivers
-- Healthcare professionals seeking quick medicine identification
+MediScan is ideal for:
 
-## 🧰 Technical Stack
+*   Rural healthcare workers needing quick medication verification.
+*   Individuals in remote areas managing their or others' medications.
+*   Elderly patients and their caregivers seeking assistance with medication identification.
+*   Anyone needing a fast, reliable way to identify pills and medications.
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
-- **Typography**: Inter font family
-- **Deployment**: Ready for deployment on Vercel or other platforms
+## 🧰 Landing Page Technical Stack
 
-## 🚀 Getting Started
+This *landing page* is built using:
 
-1. Clone this repository
-2. Install dependencies:
+*   **Framework**: [Next.js](https://nextjs.org/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+*   **Typography**: Inter font family
+*   **Deployment**: Ready for deployment on Vercel or other platforms
 
-```bash
-npm install
-# or
-yarn install
-```
+## ⚖️ Legal Information
 
-3. Run the development server:
+Please review our terms and policies:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 📁 Project Structure
-
-- `/app` - Main application pages
-- `/app/privacy` - Privacy policy page
-- `/app/terms` - Terms of service page
-- `/components` - Reusable UI components
-- `/public` - Static assets including SVGs and images
-
-## 🎨 Customization
-
-The landing page can be easily customized by editing:
-
-- **Colors**: Update primary colors in `globals.css` and `tailwind.config.js`
-- **Content**: Modify text in the page components
-- **Images**: Replace mock app screenshots in the `PlaceholderAppScreen` component
-- **Logo**: Modify the `AppLogo` component
-
-## 💡 Future Enhancements
-
-- Add actual app download functionality
-- Implement language switching for multilingual support
-- Add a blog section for health and medication information
-- Integrate with a medicine database API for demo purposes
+*   [Terms of Service](/terms)
+*   [Privacy Policy](/privacy)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project (the landing page) is licensed under the MIT License - see the `LICENSE` file for details.
 
 ## 👥 About the Developer
 
@@ -83,4 +70,4 @@ Designed and developed by Kethan VR, focusing on creating accessible healthcare 
 
 ---
 
-This landing page is a demonstration of a fictional product. In a real healthcare application, proper medical supervision, testing, and regulatory compliance would be required.
+**Disclaimer:** MediScan is a demonstration application. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified healthcare provider for any questions regarding medical conditions or medications. In a real-world scenario, such an application would require rigorous testing, validation, and adherence to healthcare regulations.
