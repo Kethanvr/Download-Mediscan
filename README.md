@@ -16,11 +16,12 @@ MediScan is an AI-powered application designed to help users quickly and accurat
 
 ## 📲 Download the App
 
-Get started with MediScan today! Download the Android application directly:
+Get started with MediScan today! You can download the app from our website or directly as an APK:
 
-[**Download MediScan APK**](public/MediScan.apk?raw=true)
+*   **[Visit Download Website](https://downloadmediscan.kethanvr.me)**
+*   **[Download MediScan APK](public/MediScan.apk?raw=true)**
 
-*(Note: Ensure your device allows installation from unknown sources. This is a demo application.)*
+*(Note: If downloading the APK directly, ensure your device allows installation from unknown sources. This is a demo application.)*
 
 ## ✨ App Features
 
@@ -42,7 +43,7 @@ Here's a glimpse of the MediScan app interface:
 |---|---|---|---|---|---|
 | <img src="public/assets/Homage-page.png" alt="Home Page" width="150"/> | <img src="public/assets/Gold-plan.png" alt="Gold Plan" width="150"/> | <img src="public/assets/Accunt-gold.png" alt="Account Screen" width="150"/> | <img src="public/assets/Histroy-gold.png" alt="History Screen" width="150"/> | <img src="public/assets/chat.png" alt="Chat Screen" width="150"/> | <img src="public/assets/whtsnew.png" alt="What's New Screen" width="150"/> |
 
-*(Note: The `Home-gold.png` image seems redundant with `Homage-page.png` and `Gold-plan.png`, so it was omitted for clarity. Adjust if needed.)*
+
 
 ## 🎯 Target Audience
 
