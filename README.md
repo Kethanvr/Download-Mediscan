@@ -34,6 +34,16 @@ MediScan offers a range of features designed for ease of use and accuracy:
 *   **📱 User-Friendly Interface**: Clean, intuitive design makes navigating the app simple for all users.
 *   **♿ Accessibility**: Built with accessibility in mind to ensure usability for everyone.
 
+## 📸 Screenshots
+
+Here's a glimpse of the MediScan app interface:
+
+| Home Page | Gold Features | Account | History | Chat | What's New |
+|---|---|---|---|---|---|
+| <img src="public/assets/Homage-page.png" alt="Home Page" width="150"/> | <img src="public/assets/Gold-plan.png" alt="Gold Plan" width="150"/> | <img src="public/assets/Accunt-gold.png" alt="Account Screen" width="150"/> | <img src="public/assets/Histroy-gold.png" alt="History Screen" width="150"/> | <img src="public/assets/chat.png" alt="Chat Screen" width="150"/> | <img src="public/assets/whtsnew.png" alt="What's New Screen" width="150"/> |
+
+*(Note: The `Home-gold.png` image seems redundant with `Homage-page.png` and `Gold-plan.png`, so it was omitted for clarity. Adjust if needed.)*
+
 ## 🎯 Target Audience
 
 MediScan is ideal for:
