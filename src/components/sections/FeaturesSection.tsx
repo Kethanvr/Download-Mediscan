@@ -20,12 +20,12 @@ interface FeatureItemProps {
 
 function FeatureItem({ icon, title, description }: FeatureItemProps) {
   return (
-    <li className="flex items-start hover:bg-gray-100 p-4 rounded-lg transition-all duration-300 ease-in-out">
-      <div className="bg-primary rounded-full p-3 text-white mr-4 mt-1">
+    <li className="flex items-start p-5 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 ease-in-out border border-transparent hover:border-gray-200 group">
+      <div className="bg-gradient-to-r from-primary to-blue-600 rounded-xl p-3 text-white mr-4 mt-1 shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-110">
         {icon}
       </div>
       <div>
-        <h4 className="font-semibold text-lg md:text-xl mb-1 text-gray-800">{title}</h4>
+        <h4 className="font-semibold text-lg md:text-xl mb-2 text-gray-800 group-hover:text-primary transition-colors">{title}</h4>
         <p className="text-gray-600 text-sm md:text-base">{description}</p>
       </div>
     </li>
@@ -73,9 +73,20 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-gray-50 py-20 font-poppins">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8 text-primary tracking-wide">
+    <section className="py-24 relative overflow-hidden font-poppins">
+      {/* Background with pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 -z-10"></div>
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#3B82F6_1px,transparent_1px)] [background-size:20px_20px] -z-10"></div>
+      
+      <div className="container mx-auto px-4">
+        {/* Features badge */}
+        <div className="flex justify-center mb-8">
+          <div className="bg-blue-100 text-primary px-6 py-2 rounded-full text-sm font-bold">
+            POWERFUL FEATURES
+          </div>
+        </div>
+        
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-primary tracking-wide">
           🩺 About MediScan
         </h2>
 
@@ -89,8 +100,11 @@ export default function FeaturesSection() {
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h3 className="text-xl md:text-2xl font-bold mb-8 text-gray-800">
-              🔍 Features
+            <h3 className="text-2xl md:text-3xl font-bold mb-10 text-gray-800 relative">
+              <span className="relative inline-block">
+                🔍 Features
+                <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-blue-400"></span>
+              </span>
             </h3>
             <ul className="space-y-6">
               {features.map((feature) => (
@@ -100,13 +114,19 @@ export default function FeaturesSection() {
           </div>
 
           <div className="flex justify-center">
-         <Image
-                        src="/assets/promotion.png"
-                        alt="MediScan Home Page"
-                        width={300}
-                        height={600}
-                        className="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
-                      />
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-blue-400/20 blur-lg rounded-2xl"></div>
+              <Image
+                src="/assets/promotion.png"
+                alt="MediScan Home Page"
+                width={350}
+                height={650}
+                className="relative w-full h-full object-cover rounded-2xl shadow-2xl hover:shadow-blue-200/50 transition-shadow duration-300"
+              />
+              {/* Decorative elements */}
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-primary/10 rounded-full blur-md"></div>
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-blue-400/10 rounded-full blur-md"></div>
+            </div>
           </div>
         </div>
       </div>

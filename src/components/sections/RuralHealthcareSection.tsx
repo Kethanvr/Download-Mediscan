@@ -1,49 +1,70 @@
 export default function RuralHealthcareSection() {
   const benefits = [
-   
     {
+      icon: "🌐",
       title: "Multilingual Support",
       description: "Access health and medicine information in multiple regional languages, making it easier for everyone to use.",
     },
     {
+      icon: "📱",
       title: "Low Resource Design",
       description: "Optimized for older smartphones with limited processing power, ensuring accessibility to all.",
     },
     {
+      icon: "💰",
       title: "Affordable Healthcare",
       description: "Low-cost access to critical healthcare information, empowering individuals in rural communities to make informed decisions.",
     },
   ];
 
   return (
-    <section className="py-20 font-poppins bg-blue-50">
-      <div className="container mx-auto">
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
-          <div className="max-w-3xl mx-auto text-center">
-            {/* Badge */}
-            <div className="inline-block bg-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              Rural Healthcare Empowerment
-            </div>
+    <section className="py-24 font-poppins relative overflow-hidden">
+      {/* Background with pattern */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white -z-10"></div>
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#4299E1_1px,transparent_1px)] [background-size:20px_20px] -z-10"></div>
 
-            {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Bridging the Healthcare Gap
-            </h2>
+      <div className="container mx-auto px-4">
+        {/* Badge */}
+        <div className="flex justify-center mb-8">
+          <div className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+            RURAL HEALTHCARE INITIATIVE
+          </div>
+        </div>
+        
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-800">
+          Bridging the Healthcare Gap
+        </h2>
+        
+        {/* Description */}
+        <p className="text-lg md:text-xl text-gray-700 text-center mb-12 leading-relaxed max-w-3xl mx-auto">
+          MediScan was designed specifically for rural communities where access to healthcare professionals can be limited. 
+          The app helps individuals identify medicines, understand dosages, and access vital health information with ease 
+          and without requiring constant internet connectivity.
+        </p>
 
-            {/* Description */}
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              MediScan was designed specifically for rural communities where access to healthcare professionals can be limited. The app helps individuals identify medicines, understand dosages, and access vital health information with ease and without requiring constant internet connectivity.
-            </p>
-
-            {/* Benefits */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-              {benefits.map((benefit) => (
-                <div key={benefit.title} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-primary font-semibold text-lg mb-3">{benefit.title}</div>
-                  <p className="text-gray-600">{benefit.description}</p>
-                </div>
-              ))}
-            </div>
+        {/* Card with benefits */}
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-blue-100 hover:border-blue-200 transition-all duration-300 max-w-6xl mx-auto">
+          {/* Benefits */}
+          <div className="grid md:grid-cols-3 gap-8">
+            {benefits.map((benefit) => (
+              <div 
+                key={benefit.title} 
+                className="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-blue-100 group hover:border-blue-300"
+              >
+                <div className="text-4xl mb-4">{benefit.icon}</div>
+                <h3 className="text-xl font-semibold mb-3 text-blue-600 group-hover:text-blue-700 transition-colors">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+          
+          {/* Call to action */}
+          <div className="mt-12 text-center">
+            <p className="text-blue-600 font-medium mb-3">Making healthcare accessible to everyone</p>
+            <div className="inline-flex h-1 w-20 bg-gradient-to-r from-blue-400 to-cyan-400 rounded"></div>
           </div>
         </div>
       </div>
