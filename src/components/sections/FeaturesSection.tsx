@@ -100,15 +100,13 @@ export default function FeaturesSection() {
           </div>
 
           <div className="flex justify-center">
-            <PhoneMockup className="transform transition-transform duration-300 hover:scale-105">
-              <Image
-                src="/assets/whtsnew.png"
-                alt="MediScan Home Page"
-                width={300}
-                height={600}
-                className="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out"
-              />
-            </PhoneMockup>
+         <Image
+                        src="/assets/promotion.png"
+                        alt="MediScan Home Page"
+                        width={300}
+                        height={600}
+                        className="w-full h-full object-cover rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                      />
           </div>
         </div>
       </div>

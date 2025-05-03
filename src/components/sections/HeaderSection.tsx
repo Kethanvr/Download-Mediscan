@@ -3,6 +3,7 @@
 import AppLogo from "@/components/AppLogo";
 import PhoneMockup from "@/components/PhoneMockup";
 import { FaDownload } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import Image from "next/image";
 
 export default function HeaderSection() {
@@ -30,17 +31,38 @@ export default function HeaderSection() {
           Capture a photo and access instant, AI-powered medicine information
           — faster, safer, smarter healthcare for everyone, everywhere.
         </p>
-
-        {/* Download Button */}
-        <a href="/MediScan.apk" download>
-          <button
-            type="button"
-            className="flex items-center mx-auto bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg mb-16 hover:bg-blue-600 transition-colors shadow-lg transform hover:scale-105"
+<p className="text-sm text-gray-600 mb-4 italic">
+                Use the website if you encounter any issues with the APK.
+              </p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-16">
+          
+          {/* Visit Website Button */}
+          <a
+            href="https://mediscan.kethanvr.me"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaDownload className="mr-2" />
-            Download APK
-          </button>
-        </a>
+            <button
+              type="button"
+               className="flex items-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-lg transform hover:scale-105"
+            >
+              <FaGlobe className="mr-2" />
+              Visit Website
+            </button>
+          </a>
+
+          {/* Download Button */}
+          <a href="/MediScan.apk" download>
+            <button
+              type="button"
+              className="flex items-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-lg transform hover:scale-105"
+            >
+              <FaDownload className="mr-2" />
+              Download APK
+            </button>
+          </a>
+          
+        </div>
 
         {/* Phone Demo */}
         <div className="flex justify-center">

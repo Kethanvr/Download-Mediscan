@@ -71,6 +71,19 @@ export default function DownloadSection() {
               </div>
 
               {/* Download Button */}
+              {/* Website Link Button */}
+              <a href="https://mediscan.kethanvr.me" target="_blank" rel="noopener noreferrer">
+                <button
+                  type="button"
+                   className="w-full flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-lg"
+                >
+                  🌐 Visit Website
+                </button>
+              </a>
+              <p className="text-sm text-gray-600 mb-4 italic">
+                Use the website if you encounter any issues with the APK.
+              </p>
+
               <a href="/MediScan.apk" download>
                 <button
                   type="button"
