@@ -39,12 +39,8 @@ export default function GoldMembershipSection() {
     { title: "Priority Support", description: "Get help when you need it" },
     { title: "Ad-Free Experience", description: "No interruptions, ever" },
   ];
-
   return (
-    <section className="py-24 font-poppins relative overflow-hidden">
-      {/* Gold background gradient and pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-yellow-50 to-white -z-10"></div>
-      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#FFD700_1px,transparent_1px)] [background-size:20px_20px] -z-10"></div>
+    <section className="py-24 font-poppins">
       
       <div className="container mx-auto px-4">
         {/* Gold badge */}
@@ -62,16 +58,14 @@ export default function GoldMembershipSection() {
           Unlock the ultimate MediScan experience! With{" "}
           <span className="font-bold text-yellow-500">Gold Membership</span>,
           enjoy a premium experience designed for those who want the very best.
-        </p>
-
-        {/* Features grid */}
+        </p>        {/* Features grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
           {goldFeatures.map((feature, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-yellow-100 group hover:border-yellow-300"
+              className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
             >
-              <h3 className="text-xl font-semibold mb-2 text-yellow-600 group-hover:text-yellow-500 transition-colors">
+              <h3 className="text-xl font-semibold mb-2 text-yellow-600">
                 {feature.title}
               </h3>
               <p className="text-gray-600">{feature.description}</p>

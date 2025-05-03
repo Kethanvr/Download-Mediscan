@@ -16,12 +16,8 @@ export default function RuralHealthcareSection() {
       description: "Low-cost access to critical healthcare information, empowering individuals in rural communities to make informed decisions.",
     },
   ];
-
   return (
-    <section className="py-24 font-poppins relative overflow-hidden">
-      {/* Background with pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white -z-10"></div>
-      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#4299E1_1px,transparent_1px)] [background-size:20px_20px] -z-10"></div>
+    <section className="py-24 font-poppins">
 
       <div className="container mx-auto px-4">
         {/* Badge */}
@@ -41,19 +37,17 @@ export default function RuralHealthcareSection() {
           MediScan was designed specifically for rural communities where access to healthcare professionals can be limited. 
           The app helps individuals identify medicines, understand dosages, and access vital health information with ease 
           and without requiring constant internet connectivity.
-        </p>
-
-        {/* Card with benefits */}
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-blue-100 hover:border-blue-200 transition-all duration-300 max-w-6xl mx-auto">
+        </p>        {/* Card with benefits */}
+        <div className="bg-white rounded-lg p-8 md:p-12 shadow-md border border-gray-100 max-w-6xl mx-auto">
           {/* Benefits */}
           <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit) => (
               <div 
                 key={benefit.title} 
-                className="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-blue-100 group hover:border-blue-300"
+                className="bg-blue-50 p-6 rounded-lg"
               >
                 <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-blue-600 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">
                   {benefit.title}
                 </h3>
                 <p className="text-gray-600">{benefit.description}</p>
