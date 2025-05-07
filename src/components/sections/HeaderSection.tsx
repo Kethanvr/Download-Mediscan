@@ -56,8 +56,7 @@ export default function HeaderSection() {
         <p className="text-sm text-gray-600 mb-4 italic">
           Use the website if you encounter any issues with the APK.
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">
-          {/* Visit Website Button */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">          {/* Visit Website Button */}
           <a
             href="https://mediscan.kethanvr.me"
             target="_blank"
@@ -65,10 +64,12 @@ export default function HeaderSection() {
           >
             <button
               type="button"
-              className="flex items-center bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors shadow-lg transform hover:scale-105"
+              className="flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-600 hover:to-blue-800 transition-all shadow-lg transform hover:scale-105"
             >
-              <FaGlobe className="mr-2" />
-              Visit Website
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+              Vist Website
             </button>
           </a>
           {/* Download Button */}

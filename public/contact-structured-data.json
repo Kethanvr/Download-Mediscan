@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://mediscan.kethanvr.me/contact",
+  "name": "Contact MediScan - AI Medicine Scanner App",
+  "description": "Get in touch with the MediScan team. We're here to answer your questions about our AI-powered medicine identification application.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://mediscan.kethanvr.me",
+    "name": "MediScan - AI Medicine Scanner",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MediScan Technologies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mediscan.kethanvr.me/assets/Mediscan.png"
+      },
+      "email": "kethanvr@gmail.com",
+      "sameAs": [
+        "https://github.com/Kethanvr",
+        "https://www.linkedin.com/in/kethan-vr-433ab532b/",
+        "https://x.com/VrKethan",
+        "https://www.youtube.com/@kethanvr"
+      ]
+    }
+  }
+}
