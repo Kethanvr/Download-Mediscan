@@ -131,20 +131,31 @@ MediScan is designed to serve a diverse range of users with medication identific
 
 ## 🧰 Technical Stack
 
-This project leverages modern web technologies for optimal performance and user experience:
+This project leverages a modern stack for optimal performance and user experience:
 
 ### Frontend
-* **Framework**: [Next.js](https://nextjs.org/) - React framework for server-rendered applications
+* **Framework**: [React](https://react.dev/) with [Vite](https://vitejs.dev/) for fast development and builds
 * **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 * **Icons**: [React Icons](https://react-icons.github.io/react-icons/) - Popular icon sets as React components
+* **Language**: JavaScript (JS)
 * **Typography**: Inter and Baloo Bhai font families for clean, readable text
 * **Animation**: Custom CSS animations for smooth, engaging user interactions
 
-### Infrastructure
+### Backend & Infrastructure
+* **Backend**: [Supabase](https://supabase.com/) - Open source backend as a service (BaaS)
 * **Deployment**: Vercel platform for seamless deployment and hosting
 * **SEO Optimization**: Structured data, metadata, and semantic HTML for search engines
 * **Performance**: Image optimization, lazy loading, and code splitting for speed
 * **Accessibility**: ARIA attributes and semantic HTML for screen reader compatibility
+
+## 🚀 Upcoming Features
+
+Stay tuned for these exciting features coming soon:
+
+* **⏰ Medication Reminders**: Set personalized reminders for taking medications.
+* **🔄 Sync Across Devices**: Access your medication data across multiple devices.
+* **🏥 Family Accounts**: Manage medications for multiple family members from one account.
+* **🌐 Offline Functionality**: Basic features work without an internet connection, perfect for areas with limited connectivity.
 
 ## ⚖️ Legal Information
 
@@ -172,9 +183,10 @@ I'm a developer passionate about creating accessible healthcare technology solut
   📷 <a href="https://github.com/Kethanvr" target="_blank">GitHub</a>
 </p>
 
+
 ### Get in Touch
 
-Have questions about MediScan or interested in collaboration? Feel free to reach out through any of my social media channels or visit the [contact page](/contact) on the MediScan website.
+Have questions about MediScan or interested in collaboration? Feel free to reach out through any of my social media channels or connect with me directly on [LinkedIn](https://www.linkedin.com/in/kethanvr/).
 
 ---
 
