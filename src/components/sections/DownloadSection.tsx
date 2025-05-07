@@ -37,7 +37,7 @@ export default function DownloadSection() {
             <div className="relative w-full max-w-[300px] md:max-w-[350px]">
               <PhoneMockup className="scale-75 md:scale-100 hover:scale-105 transition-all duration-500 relative z-10">
                 <Image
-                  src="/assets/Home-gold.png"
+                  src="/assets/Mediscan-homepage.png"
                   alt="MediScan Home Page"
                   width={300}
                   height={600}

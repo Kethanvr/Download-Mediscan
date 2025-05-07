@@ -5,19 +5,19 @@ import PhoneMockup from "@/components/PhoneMockup";
 
 const screenshots = [
   {
-    src: "/assets/Gold-plan.png",
+    src: "/assets/Mediscan-Gold-Update.png",
     alt: "MediScan Gold Plan",
   },
   {
-    src: "/assets/Home-gold.png",
+    src: "/assets/Mediscan-homepage-gold.png",
     alt: "MediScan Gold Home",
   },
   {
-    src: "/assets/Histroy-gold.png",
+    src: "/assets/Mediscan-History-gold.png",
     alt: "MediScan Gold History",
   },
   {
-    src: "/assets/Accunt-gold.png",
+    src: "/assets/Mediscan-Gold.png",
     alt: "MediScan Gold Account",
   },
 ];

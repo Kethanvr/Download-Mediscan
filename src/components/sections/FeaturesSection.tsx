@@ -111,8 +111,8 @@ export default function FeaturesSection() {
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative w-full max-w-[300px] md:max-w-[350px]">
               <Image
-                src="/assets/promotion.png"
-                alt="MediScan Home Page"
+                src="/assets/Mediscan-reedem-code.png"
+                alt="Mediscan reedem code"
                 width={350}
                 height={650}
                 className="relative w-full h-full object-cover rounded-3xl shadow-2xl hover:shadow-blue-200/50 transition-all duration-300 transform hover:-translate-y-2"

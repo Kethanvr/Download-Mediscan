@@ -118,7 +118,7 @@ export default function HeaderSection() {
           <PhoneMockup className="scale-75 md:scale-90 lg:scale-100 transform transition-all duration-300 hover:scale-105">
             <div className="bg-blue-500 text-white h-full flex flex-col">
               <Image
-                src="/assets/Homage-page.png"
+                src="/assets/Mediscan-homepage.png"
                 alt="MediScan Home Page"
                 width={300}
                 height={600}
