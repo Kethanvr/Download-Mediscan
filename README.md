@@ -161,8 +161,8 @@ Stay tuned for these exciting features coming soon:
 
 Please review our terms and policies:
 
-* [Terms of Service](/terms)
-* [Privacy Policy](/privacy)
+* [Terms of Service](https://downloadmediscan.kethanvr.me/terms)
+* [Privacy Policy](https://downloadmediscan.kethanvr.me/privacy)
 
 ## 📄 License
 
