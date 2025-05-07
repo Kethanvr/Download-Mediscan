@@ -70,73 +70,42 @@ export default function PrivacyPolicy() {
 
             <div className="prose max-w-none">
               <p className="mb-4">
-                At MediScan, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
+                At MediScan, your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our AI-powered medicine identification app, built with React, Vite, Supabase, JavaScript, and Tailwind CSS.
               </p>
 
-              {/* Information We Collect */}
               <h3 className="text-xl font-semibold mt-8 mb-4">Information We Collect</h3>
               <p className="mb-4">
-                <strong>Personal Data</strong>: When you use our app, we may collect certain personally identifiable information, including but not limited to:
+                <strong>Personal Data</strong>: We may collect information such as camera data (only during active scanning), device information, scan history (stored locally), and optional health records you choose to upload. Most data is stored on your device, and only minimal data is sent to our servers for processing.
               </p>
-              <ul className="list-disc pl-5 mb-4">
-                <li>Camera data (only during active scanning)</li>
-                <li>Device information</li>
-                <li>Medicine scan history (stored locally on your device)</li>
-                <li>Optional health records you choose to upload</li>
-              </ul>
 
-              {/* How We Use Your Information */}
               <h3 className="text-xl font-semibold mt-8 mb-4">How We Use Your Information</h3>
               <p className="mb-4">
-                We use the collected data for various purposes:
+                We use your data to provide and improve our services, identify medicines, offer medication information, and support features like Medication Reminders, Sync Across Devices, Family Accounts, and Offline Functionality. We may use anonymized data to improve our AI models, but only with your explicit consent.
               </p>
-              <ul className="list-disc pl-5 mb-4">
-                <li>To provide and maintain our Service</li>
-                <li>To identify medicines through our AI scanning technology</li>
-                <li>To provide medicine information and health guidance</li>
-                <li>To improve our AI models with anonymized data (only with explicit consent)</li>
-                <li>To respond to your inquiries and provide customer support</li>
-              </ul>
 
-              {/* Data Security */}
               <h3 className="text-xl font-semibold mt-8 mb-4">Data Security</h3>
               <p className="mb-4">
-                The security of your data is important to us. Your health data and medicine scans are stored locally on your device. Any data sent to our servers for processing is encrypted during transmission and we do not retain image data after processing.
+                Your health data and scan history are stored locally on your device. Any data sent to our servers is encrypted in transit, and we do not retain image data after processing. We take reasonable steps to protect your information.
               </p>
 
-              {/* Offline Functionality */}
               <h3 className="text-xl font-semibold mt-8 mb-4">Offline Functionality</h3>
               <p className="mb-4">
-                MediScan is designed to function offline after initial setup. Core medicine identification features work without an internet connection, though some advanced features may require connectivity.
+                MediScan is designed to work offline for core features after initial setup. Some advanced features may require an internet connection.
               </p>
 
-              {/* Rural Healthcare Focus */}
-              <h3 className="text-xl font-semibold mt-8 mb-4">Rural Healthcare Focus</h3>
+              <h3 className="text-xl font-semibold mt-8 mb-4">Rural Healthcare & Accessibility</h3>
               <p className="mb-4">
-                As part of our commitment to rural healthcare empowerment, we've designed our privacy practices to be mindful of limited connectivity environments and to provide maximum utility while respecting user privacy.
+                MediScan is built to empower rural healthcare and is accessible to users with disabilities. Our privacy practices are mindful of limited connectivity environments and user privacy.
               </p>
 
-              {/* Your Rights */}
               <h3 className="text-xl font-semibold mt-8 mb-4">Your Rights</h3>
               <p className="mb-4">
-                You have the right to:
+                You have the right to access, correct, or delete your personal data, restrict or object to processing, and request data portability. Most data is under your control within the app.
               </p>
-              <ul className="list-disc pl-5 mb-4">
-                <li>Access the personal data we have about you</li>
-                <li>Request correction of your personal data</li>
-                <li>Delete your data from our systems</li>
-                <li>Restrict or object to our processing of your data</li>
-                <li>Data portability (receiving your data in a structured format)</li>
-              </ul>
 
-              {/* Contact Us */}
               <h3 className="text-xl font-semibold mt-8 mb-4">Contact Us</h3>
               <p className="mb-4">
-                If you have any questions about this Privacy Policy, please contact us at:
-              </p>
-              <p className="mb-4">
-                <strong>Email</strong>: kethanvr@gmail.com<br />
-                <strong>Address</strong>: Bangalore, Karnataka, India
+                For privacy questions, please connect with us on <a href="https://www.linkedin.com/in/kethanvr/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
               </p>
             </div>
           </div>
