@@ -165,19 +165,21 @@ export default function MediaGallery() {
             onClick={() => setSelectedImage(null)}
           >
             <div className="relative max-w-[95vw] max-h-[95vh]">
-              <div className="absolute top-4 right-4 flex space-x-2 z-10">
-                <button
-                  className="bg-white bg-opacity-20 text-white p-3 rounded-full hover:bg-opacity-30 transition-all"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedImage(null);
-                  }}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
+              {/* Close button */}
+              {/* Close button removed in fullscreen modal */}
+              {/* Download button at bottom right */}
+              <a
+                href={`/assets/Media/${selectedImage}`}
+                download
+                className="fixed bottom-8 right-8 z-50 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-blue-700 transition-all"
+                onClick={e => e.stopPropagation()}
+                title="Download image"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                </svg>
+                Download
+              </a>
               <Image
                 src={`/assets/Media/${selectedImage}`}
                 alt={selectedImage.replace('.png', '').replaceAll('-', ' ')}
@@ -186,9 +188,7 @@ export default function MediaGallery() {
                 className="max-h-[95vh] w-auto rounded-lg shadow-2xl"
                 style={{ objectFit: "contain" }}
               />
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-center max-w-md">
-                <p>{selectedImage.replace('.png', '').replaceAll('-', ' ')}</p>
-              </div>
+              {/* Removed white overlay at the bottom of fullscreen modal */}
             </div>
           </div>
         )}
