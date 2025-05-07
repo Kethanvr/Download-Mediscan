@@ -5,7 +5,7 @@ import PhoneMockup from "@/components/PhoneMockup";
 import { FaDownload } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
 
 const mediaImages = [
   "Mediscan-smarter-than-google.png",
@@ -32,8 +32,6 @@ const mediaImages = [
 ];
 
 export default function HeaderSection() {
-  const [showGallery, setShowGallery] = useState(false);
-  const [fullImage, setFullImage] = useState<string | null>(null);
   return (
     <header className="bg-gradient-to-b from-blue-50 to-white pt-16 pb-0 font-poppins relative overflow-hidden">
       <div className="container mx-auto pt-4 pb-0 text-center">
@@ -84,91 +82,7 @@ export default function HeaderSection() {
             </button>
           </a>
         </div>
-        {/* Gallery Button - centered on mobile */}
-        <div className="flex justify-center w-full">
-          <button
-            type="button"
-            className="mt-4 mb-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-10 py-4 rounded-full font-bold text-xl shadow-xl hover:from-blue-600 hover:to-cyan-600 transition-colors"
-            onClick={() => setShowGallery(true)}
-          >
-            Gallery
-          </button>
-        </div>
-        {/* Gallery Modal */}
-        {showGallery && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm"
-            style={{ touchAction: "none" }}
-          >
-            <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full mx-2 p-4 md:p-6 overflow-y-auto max-h-[90vh]">
-              <button
-                className="absolute top-4 right-4 text-gray-600 hover:text-primary text-2xl font-bold"
-                onClick={() => setShowGallery(false)}
-                aria-label="Close gallery"
-              >
-                ×
-              </button>
-              <h2 className="text-2xl font-bold mb-6 text-center text-primary">
-                Media Gallery
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {mediaImages.map((img) => (
-                  <div
-                    key={img}
-                    className="bg-gray-50 rounded-xl shadow hover:shadow-lg transition-all p-2 flex flex-col items-center relative group"
-                  >
-                    <img
-                      src={`/assets/Media/${img}`}
-                      alt={img}
-                      className="rounded-lg w-full h-56 object-cover object-center select-none pointer-events-auto mb-2 cursor-pointer"
-                      draggable={false}
-                      style={{ touchAction: "none" }}
-                      onClick={() => setFullImage(img)}
-                    />
-                    {/* Download overlay button */}
-                    <a
-                      href={`/assets/Media/${img}`}
-                      download
-                      className="absolute bottom-2 left-2 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow opacity-90 group-hover:opacity-100 transition-opacity z-10"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Download
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Fullscreen Image Overlay */}
-            {fullImage && (
-              <div className="fixed inset-0 z-60 flex items-center justify-center bg-black bg-opacity-90">
-                <div className="relative flex items-center justify-center w-full h-full">
-                  <button
-                    className="absolute top-4 right-4 text-white text-3xl font-bold z-20"
-                    onClick={() => setFullImage(null)}
-                    aria-label="Close image"
-                  >
-                    ×
-                  </button>
-                  <div className="relative max-w-full max-h-full flex items-center justify-center">
-                    <img
-                      src={`/assets/Media/${fullImage}`}
-                      alt={fullImage}
-                      className="max-h-[80vh] max-w-[95vw] rounded-xl shadow-xl object-contain bg-white"
-                      style={{ display: "block", margin: "0 auto" }}
-                    />
-                    <a
-                      href={`/assets/Media/${fullImage}`}
-                      download
-                      className="absolute bottom-4 left-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow z-20"
-                    >
-                      Download
-                    </a>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        )}
+      
       </div>
       {/* Decorative Curve Behind Phone */}
       <div className="relative mt-8 md:mt-0">
@@ -212,7 +126,19 @@ export default function HeaderSection() {
             </div>
           </PhoneMockup>
         </div>
+        
       </div>
+        {/* Media Gallery Link */}
+        <div className="flex justify-center w-full">
+          <Link href="/media">
+            <button
+              type="button"
+              className="mt-4 mb-8 bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-10 py-4 rounded-full font-bold text-xl shadow-xl hover:from-blue-600 hover:to-cyan-600 transition-colors"
+            >
+              Media Gallery
+            </button>
+          </Link>
+        </div>
     </header>
   );
 }
