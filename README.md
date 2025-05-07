@@ -11,7 +11,7 @@
 MediScan is an AI-powered application designed to help users quickly and accurately identify medications. This landing page showcases the app's capabilities, built with Next.js and Tailwind CSS for a modern, responsive experience.
 
 <p align="center">
-  <img src="public/assets/Home-gold.png" alt="MediScan Logo" width="150"/>
+  <img src="public/assets/Media/Mediscan-Dont-google-it-Mediscan-it.png" alt="MediScan Logo" width="150"/>
 </p>
 
 ## 📲 Download the App
