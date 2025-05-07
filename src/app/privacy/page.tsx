@@ -1,6 +1,23 @@
 import AppLogo from "@/components/AppLogo";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import type { Metadata } from "next";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - MediScan",
+  description: "Learn about MediScan's privacy practices and how we protect your data when using our AI medicine scanner application.",
+  alternates: {
+    canonical: "https://mediscan.kethanvr.me/privacy"
+  },
+  keywords: ["privacy policy", "MediScan privacy", "healthcare app privacy", "data protection", "medical app privacy"],
+  openGraph: {
+    title: "Privacy Policy - MediScan",
+    description: "Learn about MediScan's privacy practices and data protection policies",
+    url: "https://mediscan.kethanvr.me/privacy",
+    type: "article",
+  }
+};
 
 export default function PrivacyPolicy() {
   return (    <main className="min-h-screen py-10 bg-gradient-to-b from-blue-50 to-white">
@@ -10,12 +27,41 @@ export default function PrivacyPolicy() {
           <FaArrowLeft className="mr-2" />
           Back to Home
         </Link>
+        
+        {/* Breadcrumb navigation for SEO */}
+        <nav className="text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
+          <ol className="list-none p-0 inline-flex">
+            <li className="flex items-center">
+              <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+              <svg className="fill-current w-3 h-3 mx-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+              </svg>
+            </li>
+            <li aria-current="page" className="text-blue-600">Privacy Policy</li>
+          </ol>
+        </nav>
 
         {/* Header */}
         <div className="flex items-center mb-12">
           <AppLogo className="w-40 h-40" />
           <h1 className="text-3xl md:text-4xl font-bold ml-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Privacy Policy</h1>
         </div>
+
+        {/* Add structured data for Privacy Policy page */}
+        <Script
+          id="privacy-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(require('../../../public/privacy-structured-data.json')),
+          }}
+        />
+        <Script
+          id="privacy-breadcrumb-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(require('../../../public/privacy-breadcrumb.json')),
+          }}
+        />
 
         {/* Content Section */}
         <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg border border-blue-100 hover:border-blue-200 transition-colors">

@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://mediscan.kethanvr.me/terms",
+  "name": "Terms of Service - MediScan",
+  "description": "Terms and conditions for using MediScan's AI-powered medicine identification application for rural healthcare.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://mediscan.kethanvr.me",
+    "name": "MediScan - AI Medicine Scanner",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MediScan Technologies"
+    }
+  },
+  "mainEntity": {
+    "@type": "Article",
+    "mainEntityOfPage": "https://mediscan.kethanvr.me/terms",
+    "headline": "MediScan Terms of Service",
+    "datePublished": "2025-05-01",
+    "dateModified": "2025-05-07",
+    "author": {
+      "@type": "Person",
+      "name": "Kethan VR"
+    }
+  }
+}

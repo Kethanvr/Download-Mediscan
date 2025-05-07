@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "MediScan Media Gallery",
+  "description": "A gallery of promotional images, screenshots, and infographics for the MediScan AI medicine identification application.",
+  "url": "https://mediscan.kethanvr.me/media",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://mediscan.kethanvr.me",
+    "name": "MediScan - AI Medicine Scanner"
+  },
+  "thumbnail": "https://mediscan.kethanvr.me/assets/Media/Mediscan-scan-to-save.png",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://mediscan.kethanvr.me/assets/Media/Mediscan-smarter-than-google.png",
+      "name": "MediScan is smarter than Google for medicine identification",
+      "description": "Visual comparison of MediScan's medicine identification accuracy versus Google searches"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mediscan.kethanvr.me/assets/Media/Mediscan-scan-to-save.png",
+      "name": "Scan to Save with MediScan",
+      "description": "MediScan's medicine scanning feature helps save lives by identifying medications accurately"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://mediscan.kethanvr.me/assets/Media/Mediscan-your-helath-in-your-hands.png",
+      "name": "Your Health In Your Hands",
+      "description": "MediScan puts healthcare knowledge directly in users' hands through mobile technology"
+    }
+  ]
+}

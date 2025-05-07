@@ -71,9 +71,21 @@ export default function RootLayout({
       <Head>
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1"
         />
+        <meta name="theme-color" content="#3B82F6" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
         <meta name="google-adsense-account" content="ca-pub-6985167612880362" />
+        {/* SEO: Structured Data for MediScan (only on homepage) */}
+        <script
+          id="main-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(require('../../public/structured-data.json')),
+          }}
+          data-pagetype="homepage"
+        />
       </Head>
       <body className={`${balooBhai2.variable} ${poppins.variable} font-sans antialiased`}>
         <Script

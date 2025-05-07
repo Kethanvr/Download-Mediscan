@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "MediScan - AI Medicine Scanner",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "MedicalApplication",
+  "description": "AI-powered medicine identification and information app for healthcare workers and individuals, with a focus on rural healthcare.",
+  "url": "https://mediscan.kethanvr.me/",
+  "image": "https://mediscan.kethanvr.me/assets/Mediscan.png",
+  "author": {
+    "@type": "Person",
+    "name": "Kethan VR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MediScan Technologies"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1200"
+  }
+}
