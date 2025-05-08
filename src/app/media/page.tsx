@@ -8,7 +8,12 @@ import AppLogo from "@/components/AppLogo";
 import Script from "next/script";
 
 const mediaImages = [
- 
+  "Mediscan-Dont-google-it-Mediscan-it.png",
+   
+  "Mediscan-Know-what-you-take.png",
+  "Mediscan-why-Meidscan.png",
+  "Mediscan-your-helath-in-your-hands.png",
+
   "Mediscan-your-helath-one-tap-away.png",
   "Meidscan-ask-doc.png",
   "Mediscan-no-more-medicine-mumbo-jumbo.png",
@@ -23,12 +28,9 @@ const mediaImages = [
   "Mediscan-medicine-records.png",
   "Mediscan-Doc-AI.png",
   "Mediscan-scan-to-save.png",
-  "Mediscan-why-Meidscan.png",
-  "Mediscan-your-helath-in-your-hands.png",
-  "Mediscan-vs -Google.png",
-  "Mediscan-Know-what-you-take.png",
+  
   "Mediscan-for-healther-tomorrow.png",
-  "Mediscan-Dont-google-it-Mediscan-it.png",
+  "Mediscan-vs -Google.png",
    "Mediscan-smarter-than-google.png",
 ];
 

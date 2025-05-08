@@ -11,7 +11,7 @@ interface AppDetail {
 
 const appDetails: AppDetail[] = [
   { label: "Version", value: "v1.0.0-beta" },
-  { label: "Size", value: "~6 MB" },
+  { label: "Size", value: "~7 MB" },
   { label: "Platform", value: "Android 6.0+" },
   { label: "Updated", value: "May 2025" },
 ];
