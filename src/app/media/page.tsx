@@ -6,10 +6,12 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 import AppLogo from "@/components/AppLogo";
 import Script from "next/script";
+import ResponsiveAd from "@/components/ads/ResponsiveAd";
+import BannerAd from "@/components/ads/BannerAd";
 
 const mediaImages = [
   "Mediscan-Dont-google-it-Mediscan-it.png",
-   
+
   "Mediscan-Know-what-you-take.png",
   "Mediscan-why-Meidscan.png",
   "Mediscan-your-helath-in-your-hands.png",
@@ -28,25 +30,37 @@ const mediaImages = [
   "Mediscan-medicine-records.png",
   "Mediscan-Doc-AI.png",
   "Mediscan-scan-to-save.png",
-  
+
   "Mediscan-for-healther-tomorrow.png",
   "Mediscan-vs -Google.png",
-   "Mediscan-smarter-than-google.png",
+  "Mediscan-smarter-than-google.png",
 ];
 
 export default function MediaGallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<Record<string, string[]>>({});
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState("all");
 
   useEffect(() => {
     // Categorize images (simple approach based on filenames)
     const cats: Record<string, string[]> = {
-      'all': mediaImages,
-      'features': mediaImages.filter(img => img.includes('features') || img.includes('scan') || img.includes('detect')),
-      'comparisons': mediaImages.filter(img => img.includes('google') || img.includes('vs')),
-      'benefits': mediaImages.filter(img => img.includes('health') || img.includes('save') || img.includes('shield'))
+      all: mediaImages,
+      features: mediaImages.filter(
+        (img) =>
+          img.includes("features") ||
+          img.includes("scan") ||
+          img.includes("detect")
+      ),
+      comparisons: mediaImages.filter(
+        (img) => img.includes("google") || img.includes("vs")
+      ),
+      benefits: mediaImages.filter(
+        (img) =>
+          img.includes("health") ||
+          img.includes("save") ||
+          img.includes("shield")
+      ),
     };
     setCategories(cats);
     setLoading(false);
@@ -61,17 +75,21 @@ export default function MediaGallery() {
         id="media-structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(require('../../../public/media-structured-data.json')),
+          __html: JSON.stringify(
+            require("../../../public/media-structured-data.json")
+          ),
         }}
       />
       <Script
         id="media-breadcrumb-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(require('../../../public/media-breadcrumb.json')),
+          __html: JSON.stringify(
+            require("../../../public/media-breadcrumb.json")
+          ),
         }}
       />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -79,17 +97,28 @@ export default function MediaGallery() {
               <FaArrowLeft className="mr-2" />
               Back to Home
             </Link> */}
-            
+
             {/* Breadcrumb navigation for SEO */}
             <nav className="text-sm text-gray-500 mt-2" aria-label="Breadcrumb">
               <ol className="list-none p-0 inline-flex">
                 <li className="flex items-center">
-                  <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-                  <svg className="fill-current w-3 h-3 mx-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <Link
+                    href="/"
+                    className="hover:text-blue-600 transition-colors"
+                  >
+                    Home
+                  </Link>
+                  <svg
+                    className="fill-current w-3 h-3 mx-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
                     <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
                   </svg>
                 </li>
-                <li aria-current="page" className="text-blue-600">Media Gallery</li>
+                <li aria-current="page" className="text-blue-600">
+                  Media Gallery
+                </li>
               </ol>
             </nav>
           </div>
@@ -101,26 +130,31 @@ export default function MediaGallery() {
             MediScan Media Gallery
           </h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Browse our collection of promotional materials and screenshots showcasing MediScan's features and benefits.
+            Browse our collection of promotional materials and screenshots
+            showcasing MediScan's features and benefits.
           </p>
         </div>
 
+        <BannerAd />
+
         {/* Category Tabs */}
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
-          {Object.keys(categories).map(category => (
+          {Object.keys(categories).map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeCategory === category 
-                  ? 'bg-blue-600 text-white shadow-md' 
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                activeCategory === category
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "bg-white text-gray-700 hover:bg-gray-100"
               }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
+
+        <ResponsiveAd />
 
         {loading ? (
           <div className="flex justify-center items-center py-20">
@@ -140,9 +174,9 @@ export default function MediaGallery() {
                 <Image
                   src={`/assets/Media/${img}`}
                   alt={img
-                    .replace('.png', '')
-                    .replaceAll('-', ' ')
-                    .replace('Mediscan ', 'MediScan - ')}
+                    .replace(".png", "")
+                    .replaceAll("-", " ")
+                    .replace("Mediscan ", "MediScan - ")}
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -152,7 +186,7 @@ export default function MediaGallery() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20">
                   <p className="text-sm font-medium line-clamp-2">
-                    {img.replace('.png', '').replaceAll('-', ' ')}
+                    {img.replace(".png", "").replaceAll("-", " ")}
                   </p>
                 </div>
               </div>
@@ -174,17 +208,28 @@ export default function MediaGallery() {
                 href={`/assets/Media/${selectedImage}`}
                 download
                 className="fixed bottom-8 right-8 z-50 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-blue-700 transition-all"
-                onClick={e => e.stopPropagation()}
+                onClick={(e) => e.stopPropagation()}
                 title="Download image"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
+                  />
                 </svg>
                 Download
               </a>
               <Image
                 src={`/assets/Media/${selectedImage}`}
-                alt={selectedImage.replace('.png', '').replaceAll('-', ' ')}
+                alt={selectedImage.replace(".png", "").replaceAll("-", " ")}
                 width={1200}
                 height={1200}
                 className="max-h-[95vh] w-auto rounded-lg shadow-2xl"

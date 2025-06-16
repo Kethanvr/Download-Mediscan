@@ -10,6 +10,7 @@ import {
   MdUpload,
 } from "react-icons/md";
 import { RiAdvertisementLine } from "react-icons/ri";
+import InArticleAd from "@/components/ads/InArticleAd";
 
 interface FeatureItemProps {
   id: string;
@@ -63,8 +64,8 @@ const features = [
   {
     id: "ads",
     icon: <RiAdvertisementLine className="w-6 h-6" />,
-    title: "No Ads, No Clutter",
-    description: "100% ad-free experience.",
+    title: "Minimal Ads",
+    description: "Non-intrusive ads to support development.",
   },
   {
     id: "speed",
@@ -96,6 +97,8 @@ export default function FeaturesSection() {
           areas or senior communities — MediScan empowers you to make informed
           decisions, instantly.
         </p>
+
+        <InArticleAd />
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           <div className="order-2 md:order-1">
