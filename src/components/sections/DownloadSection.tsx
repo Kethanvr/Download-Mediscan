@@ -87,7 +87,7 @@ export default function DownloadSection() {
               {/* Download buttons with styling matching the image */}
               <div className="space-y-4">
                 <a
-                  href="https://mediscan.kethanvr.me"
+                  href="https://mediscan.kethanvr.tech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"

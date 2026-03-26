@@ -5,8 +5,8 @@
   "operatingSystem": "ANDROID",
   "applicationCategory": "MedicalApplication",
   "description": "AI-powered medicine identification and information app for healthcare workers and individuals, with a focus on rural healthcare.",
-  "url": "https://mediscan.kethanvr.me/",
-  "image": "https://mediscan.kethanvr.me/assets/Mediscan.png",
+  "url": "https://mediscan.kethanvr.tech/",
+  "image": "https://mediscan.kethanvr.tech/assets/Mediscan.png",
   "author": {
     "@type": "Person",
     "name": "Kethan VR"

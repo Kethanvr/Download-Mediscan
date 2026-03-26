@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Kethan VR" }],
   creator: "Kethan VR",
   publisher: "MediScan Technologies",
-  metadataBase: new URL("https://mediscan.kethanvr.me"),
+  metadataBase: new URL("https://mediscan.kethanvr.tech"),
   openGraph: {
     title: "MediScan - AI Medicine Scanner at Your Fingertips",
     description:

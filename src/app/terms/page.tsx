@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: "Terms of Service - MediScan",
   description: "Terms and conditions for using MediScan's AI-powered medicine identification application for rural healthcare.",
   alternates: {
-    canonical: "https://mediscan.kethanvr.me/terms"
+    canonical: "https://mediscan.kethanvr.tech/terms"
   },
   keywords: ["terms of service", "MediScan terms", "healthcare app terms", "user agreement", "medical app terms"],
   openGraph: {
     title: "Terms of Service - MediScan",
     description: "View MediScan's terms and conditions for using our AI medicine identification application",
-    url: "https://mediscan.kethanvr.me/terms",
+    url: "https://mediscan.kethanvr.tech/terms",
     type: "article",
   }
 };
