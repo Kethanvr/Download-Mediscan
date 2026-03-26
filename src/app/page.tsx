@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "MediScan is your trusted AI-powered health companion designed to simplify medicine identification and understanding, especially for rural healthcare workers.",
   alternates: {
-    canonical: "https://mediscan.kethanvr.me",
+    canonical: "https://mediscan.kethanvr.tech",
   },
   keywords: [
     "medicine scanner",

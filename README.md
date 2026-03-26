@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://mediscan.kethanvr.me" target="_blank">
+  <a href="https://mediscan.kethanvr.tech" target="_blank">
     <img src="https://img.shields.io/badge/Visit-MediScan_Website-3B82F6?style=for-the-badge" alt="Visit Website" />
   </a>
   <a href="https://github.com/Kethanvr/mediscan" target="_blank">
@@ -52,7 +52,7 @@ MediScan provides a simple, accessible way to:
 
 Get started with MediScan today! You can download the app from our website or directly as an APK:
 
-*   **[Visit Download Website](https://downloadmediscan.kethanvr.me)**
+*   **[Visit Download Website](https://downloadmediscan.kethanvr.tech)**
 *   **[Download MediScan APK](public/MediScan.apk?raw=true)**
 
 *(Note: If downloading the APK directly, ensure your device allows installation from unknown sources. This is a demo application.)*
@@ -99,7 +99,7 @@ MediScan offers a comprehensive range of features designed for ease of use and m
 Get started with MediScan today! You can download the app from our website or directly as an APK:
 
 <p align="center">
-  <a href="https://downloadmediscan.kethanvr.me" target="_blank">
+  <a href="https://downloadmediscan.kethanvr.tech" target="_blank">
     <img src="https://img.shields.io/badge/Visit_Download_Page-3B82F6?style=for-the-badge&logo=web&logoColor=white" alt="Visit Download Website" />
   </a>
   <a href="public/MediScan.apk?raw=true">
@@ -161,8 +161,8 @@ Stay tuned for these exciting features coming soon:
 
 Please review our terms and policies:
 
-* [Terms of Service](https://downloadmediscan.kethanvr.me/terms)
-* [Privacy Policy](https://downloadmediscan.kethanvr.me/privacy)
+* [Terms of Service](https://downloadmediscan.kethanvr.tech/terms)
+* [Privacy Policy](https://downloadmediscan.kethanvr.tech/privacy)
 
 ## 📄 License
 
@@ -177,7 +177,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 I'm a developer passionate about creating accessible healthcare technology solutions for underserved communities. MediScan represents my commitment to leveraging AI to solve real-world healthcare challenges.
 
 <p>
-  🏠 <a href="https://www.kethanvr.me/" target="_blank">Portfolio Website</a><br/>
+  🏠 <a href="https://www.kethanvr.tech/" target="_blank">Portfolio Website</a><br/>
   🔗 <a href="https://www.linkedin.com/in/kethanvr/" target="_blank">LinkedIn</a><br/>
   📽️ <a href="https://x.com/VrKethan" target="_blank">X (Twitter)</a><br/>
   📷 <a href="https://github.com/Kethanvr" target="_blank">GitHub</a>

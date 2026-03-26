@@ -58,7 +58,7 @@ export default function HeaderSection() {
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-4">          {/* Visit Website Button */}
           <a
-            href="https://mediscan.kethanvr.me"
+            href="https://mediscan.kethanvr.tech"
             target="_blank"
             rel="noopener noreferrer"
           >

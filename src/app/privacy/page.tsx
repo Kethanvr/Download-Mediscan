@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   title: "Privacy Policy - MediScan",
   description: "Learn about MediScan's privacy practices and how we protect your data when using our AI medicine scanner application.",
   alternates: {
-    canonical: "https://mediscan.kethanvr.me/privacy"
+    canonical: "https://mediscan.kethanvr.tech/privacy"
   },
   keywords: ["privacy policy", "MediScan privacy", "healthcare app privacy", "data protection", "medical app privacy"],
   openGraph: {
     title: "Privacy Policy - MediScan",
     description: "Learn about MediScan's privacy practices and data protection policies",
-    url: "https://mediscan.kethanvr.me/privacy",
+    url: "https://mediscan.kethanvr.tech/privacy",
     type: "article",
   }
 };
